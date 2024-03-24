@@ -228,20 +228,20 @@ public class test {
 //PE-1
 import java.util.*;
 
-public class test {
+public class Java_programming {
 
 	public static void main(String[] args) {
 		int Bx = 0, orange, remain = 0; //순서대로 박스, 오렌지 개수, 나머지 
 		
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in); //Scan 클래스 선언
 		
 		System.out.print("오렌지의 개수를 입력하시오: ");
-		orange = sc.nextInt();
+		orange = sc.nextInt(); //오렌지의 개수를 사용자로 부터 입력받음
 		
-		Bx = orange / 10;
-		remain = orange % 10;
+		Bx = orange / 10; //오렌지를 담는데 필요한 박스 계산
+		remain = orange % 10; //오렌지를 박스에 담고 남은 오렌지 계산
 		
-		System.out.println(Bx + "박스가 필요하고 " + remain + "개가 남습니다.");
+		System.out.println(Bx + "박스가 필요하고 " + remain + "개가 남습니다."); //출력
 	}
 
 }
@@ -253,21 +253,20 @@ public class Java_programming {
 	public static void main(String[] args) {
 		double pay, price, tax = 0, exchange = 0; //차례대로 받은 돈, 상품 가격, 부가세, 잔돈
 		
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in); //Scanner 선언
 		
-		System.out.print("받은 돈: ");
+		System.out.print("받은 돈: "); //받은 돈을 사용자로부터 받음
 		pay = sc.nextInt();
 		
-		System.out.print("상품 가격: ");
+		System.out.print("상품 가격: "); //상품 가격을 사용자로부터 받음
 		price = sc.nextInt();
 		
 		tax = price * 0.1; //부가세 계산(부가세 = 상품의 10%)
 		
 		exchange = pay - price; //잔돈 게산(잔돈 = 받은 돈 - 상품 가격)
 		
-		System.out.println("부가세: " + tax);
-		System.out.println("잔돈: " + exchange);
-
+		System.out.println("부가세: " + tax); //부가세 출력
+		System.out.println("잔돈: " + exchange); //잔돈 출력
 	}
 
 }
@@ -280,34 +279,34 @@ public class Java_programming {
 		int v, bin = 0; //입력 받을 정수
 		int a, b, c, d, e, f, g, h, i, j; //이진수 각 자리수
 		
-		Scanner sc = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in); //Scanner 선언
 		
-		System.out.print("정수: ");
+		System.out.print("정수: "); //사용자에게서 받을 정수
 		v = sc.nextInt();
-		bin = v;
+		bin = v; //정수를 계산하기 위해 똑같은 변수를 만듬
 		
-		a = (int)bin % 2;
+		a = (int)bin % 2; //10번째 자리
 		bin = bin / 2;
-		b = (int)bin % 2;
+		b = (int)bin % 2; //9번째 자리
 		bin = bin / 2;
-		c = (int)bin % 2;
+		c = (int)bin % 2; //8번째 자리
 		bin = bin / 2;
-		d = (int)bin % 2;
+		d = (int)bin % 2; //7번째 자리
 		bin = bin / 2;
-		e = (int)bin % 2;
+		e = (int)bin % 2; //6번째 자리
 		bin = bin / 2;
-		f = (int)bin % 2;
+		f = (int)bin % 2; //5번째 자리
 		bin = bin / 2;
-		g = (int)bin % 2;
+		g = (int)bin % 2; //4번째 자리
 		bin = bin / 2;
-		h = (int)bin % 2;
+		h = (int)bin % 2; //3번째 자리
 		bin = bin / 2;
-		i = (int)bin % 2;
+		i = (int)bin % 2; //2번째 자리
 		bin = bin / 2;
-		j = (int)bin % 2;
+		j = (int)bin % 2; //1번째 자리
 		bin = bin / 2;
 		
-		System.out.println(v + ": " + j + i + h + g + f + e + d + c + b + a);
+		System.out.println(v + ": " + j + i + h + g + f + e + d + c + b + a); //출력
 	}
 
 }
