@@ -86,3 +86,30 @@ public class test {
 	}
 
 }
+
+//표준 체중 계산하기
+import java.util.*;
+
+public class test {
+	
+	public static void main(String[] args) {
+		int weight, height;
+		double std_weight;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("키를 입력하세요: ");
+		height = sc.nextInt();
+		System.out.print("몸무게를 입력하세요: ");
+		weight = sc.nextInt();
+		
+		std_weight = (height - 100) * 0.9;
+		
+		if(weight > std_weight)
+			System.out.println("과체충 입니다.");
+		else if(weight < std_weight)
+			System.out.println("저체충 입니다.");
+		else if(weight == std_weight)
+			System.out.println("표준 체충 입니다.");
+	}
+
+}
